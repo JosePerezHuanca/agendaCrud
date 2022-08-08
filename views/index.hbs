@@ -1,0 +1,12 @@
+<h2>Agenda</h2>
+<p>Esto es un CRUD de contactos con express y mongoouse</p>
+<table>
+    <thead>
+        <th>id</th><th>nombre</th><th>mail</th><th>teléfono</th>
+    </thead>
+    <tbody>
+        {{#each persona}}
+        <tr><td>{{_id}}</td><td>{{nombre}}</td><td><a href="mailto:{{mail}}">{{mail}}</a></td><td>{{telefono}}</td><td><a href="/{{_id}}">borrar</a></td><td><a href="/editar/{{_id}}">Editar</a></td></tr>
+        {{/each}}
+    </tbody>
+</table>

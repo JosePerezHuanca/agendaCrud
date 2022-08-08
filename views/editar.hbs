@@ -1,0 +1,11 @@
+<h2>actualizar {{persona.nombre}}</h2>
+<form action="/editar" method="post">
+<input type="hidden" name="id" value="{{persona._id}}">
+<label for="nombre">Nombre</label>
+<input type="text" name="nombre" id="nombre" value="{{persona.nombre}}">
+<label for="mail">Mail</label>
+<input type="text" id="mail" name="mail" value="{{persona.mail}}">
+<label for="telefono">Teléfono</label>
+<input type="text" id="telefono" name="telefono" value="{{persona.telefono}}">
+    <input type="submit" value="Actualizar">
+</form>
