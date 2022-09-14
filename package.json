@@ -1,5 +1,5 @@
 {
-  "name": "agenda",
+  "name": "contactosCrud",
   "version": "0.0",
   "scripts": {
     "start": "nodemon app.js"
